@@ -143,3 +143,24 @@
 2023-03-06 10:48:23,125 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-03-06 10:48:23,125 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-03-06 10:48:23,126 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\delivery\ms-pagamento\src\test\resources
+2023-03-06 11:18:13,436 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:18:13,436 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:18:13,438 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-06 11:18:13,458 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-06 11:18:13,461 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:18:13,461 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:18:13,462 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\delivery\ms-pagamento\src\test\resources
+2023-03-06 11:18:21,202 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:18:21,202 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:18:21,203 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-03-06 11:18:21,211 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-06 11:18:21,213 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:18:21,213 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:18:21,213 [Worker-58: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\delivery\ms-pagamento\src\test\resources
+2023-03-06 11:20:30,691 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:20:30,692 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:20:30,692 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-06 11:20:30,692 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-03-06 11:20:30,694 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-03-06 11:20:30,694 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-03-06 11:20:30,694 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\workspace\delivery\ms-pagamento\src\test\resources
