@@ -52,6 +52,10 @@ public class Pagamento {
 	@NotNull
 	private Long formaDePagamentoId;
 	
+	
+	public Pagamento() {
+	}
+
 	public Pagamento(Long id, BigDecimal valor, String nome, String numero, String expiracao, String codigo,
 			Status status, Long pedidoId, Long formaDePagamentoId) {
 		this.id = id;
