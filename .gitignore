@@ -1,1 +1,2 @@
-*.metadata/**
+.metadata/.**
+.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.syncinfo.snap
