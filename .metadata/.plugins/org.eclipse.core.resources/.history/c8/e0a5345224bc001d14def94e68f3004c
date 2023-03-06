@@ -1,0 +1,19 @@
+package com.delivery.pagamento.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.delivery.pagamento.repository.PagamentoRepository;
+
+@Service
+public class PagamentoService {
+
+	private final PagamentoRepository repository;
+
+	@Autowired
+	public PagamentoService(PagamentoRepository repository) {
+		this.repository = repository;
+	}
+	
+	
+}

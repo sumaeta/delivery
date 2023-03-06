@@ -1,0 +1,7 @@
+package com.delivery.pagamento.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class PagamentoRepository implements JpaRepository<T, ID> {
+
+}

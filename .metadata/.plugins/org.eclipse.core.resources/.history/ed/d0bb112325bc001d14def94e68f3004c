@@ -1,0 +1,67 @@
+package com.delivery.pagamento.model;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
+
+@Entity
+@Table(name = "pagamentos")
+public class Pagamento {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private final Long id;
+	
+	@NotNull
+	@Positive
+	private final BigDecimal valor;
+	
+	@NotBlank
+	@Size(max = 100)
+	private final String nome;
+	
+	@NotBlank
+	@Size(max = 19)
+	private final String numero;
+	
+	@NotBlank
+	@Size(max = 7)
+	private final String expiracao;
+	
+	@NotBlank
+	@Size(min = 3, max = 3)
+	private final String codigo;
+	
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	private final Status status;
+	
+	@NotNull
+	private final Long pedidoId;
+	
+	@NotNull
+	private final Long formaDePagamentoId;
+	
+	public Pagamento(Long id, BigDecimal valor, String nome, String numero, String expiracao, String codigo,
+			Status status, Long pedidoId, Long formaDePagamentoId) {
+		this.id = id;
+		this.valor = valor;
+		this.nome = nome;
+		this.numero = numero;
+		this.expiracao = expiracao;
+		this.codigo = codigo;
+		this.status = status;
+		this.pedidoId = pedidoId;
+		this.formaDePagamentoId = formaDePagamentoId;
+	}
+}

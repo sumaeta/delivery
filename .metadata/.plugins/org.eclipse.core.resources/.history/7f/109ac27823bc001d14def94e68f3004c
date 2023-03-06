@@ -1,0 +1,5 @@
+package com.delivery.pagamento;
+
+public class PagamentoDto {
+
+}

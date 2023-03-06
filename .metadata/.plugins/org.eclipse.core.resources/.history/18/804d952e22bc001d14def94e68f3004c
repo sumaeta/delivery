@@ -1,0 +1,5 @@
+package com.delivery.pagamento.model;
+
+public class Status {
+
+}
