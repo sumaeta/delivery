@@ -19,7 +19,7 @@ jobs:
       run: mvn package -DskipTests=true
       
     - name: Build
-      run: mvn -f delivery/ms-pagamento/pom.xml
+      run: mvn -B ms-pagamento/pom.xml
 
     - name: Test with Maven
       run: mvn test
