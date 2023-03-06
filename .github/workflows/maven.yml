@@ -14,9 +14,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-
-    - name: Build with Maven
-      run: mvn package -DskipTests=true
       
     - name: Build
       run: mvn package ms-pagamento/pom.xml
