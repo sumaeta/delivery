@@ -1,7 +1,9 @@
 package com.delivery.pagamento.dto;
 
 import java.math.BigDecimal;
+import java.util.List;
 
+import com.delivery.pagamento.model.ItemDoPedido;
 import com.delivery.pagamento.model.Status;
 
 public class PagamentoDto {
@@ -15,6 +17,7 @@ public class PagamentoDto {
 	private Status status;
 	private Long formaDePagamentoId;
 	private Long pedidoId;
+	private List<ItemDoPedido> itens;
 	
 	public Long getId() {
 		return id;
@@ -86,5 +89,13 @@ public class PagamentoDto {
 	
 	public void setPedidoId(Long pedidoId) {
 		this.pedidoId = pedidoId;
+	}
+
+	public List<ItemDoPedido> getItens() {
+		return itens;
+	}
+
+	public void setItens(List<ItemDoPedido> itens) {
+		this.itens = itens;
 	}
 }

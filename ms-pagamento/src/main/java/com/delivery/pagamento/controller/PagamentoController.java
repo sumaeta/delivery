@@ -24,6 +24,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 import com.delivery.pagamento.dto.PagamentoDto;
 import com.delivery.pagamento.service.PagamentoService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @RestController
 @RequestMapping("/pagamentos")
 public class PagamentoController {
@@ -70,7 +72,12 @@ public class PagamentoController {
 	}
 	
 	@PatchMapping("/{id}/confirmar")
+	@CircuitBreaker(name = "atualizaPedido", fallbackMethod = "pagamentoAutorizadoComIntegracaoPendente")
 	public void confirmarPagamento(@PathVariable @NotNull Long id) {
 		service.confirmarPagamento(id);
+	}
+	
+	public void pagamentoAutorizadoComIntegracaoPendente(@PathVariable @NotNull Long id, Exception e) {
+		service.alteraStatus(id);
 	}
 }

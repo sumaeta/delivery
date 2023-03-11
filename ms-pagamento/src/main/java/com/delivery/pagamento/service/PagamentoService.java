@@ -3,6 +3,7 @@ package com.delivery.pagamento.service;
 import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
+import javax.validation.constraints.NotNull;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,8 +39,11 @@ public class PagamentoService {
 
 	public PagamentoDto obterPorId(Long id) {
 		Pagamento pagamento = repository.findById(id).orElseThrow(() -> new EntityNotFoundException());
-
-		return model.map(pagamento, PagamentoDto.class);
+		
+		PagamentoDto dto = model.map(pagamento, PagamentoDto.class);
+		dto.setItens(pedido.obterItensDoPedido(pagamento.getId()).getItens());
+		
+		return dto;
 	}
 
 	public PagamentoDto criarPagamento(PagamentoDto dto) {
@@ -72,4 +76,15 @@ public class PagamentoService {
         repository.save(pagamento.get());
         pedido.atualizaPagamento(pagamento.get().getPedidoId());
     }
+
+	public void alteraStatus(@NotNull Long id) {
+		Optional<Pagamento> pagamento = repository.findById(id);
+
+        if (!pagamento.isPresent()) {
+            throw new EntityNotFoundException();
+        }
+
+        pagamento.get().setStatus(Status.CONFIRMADO_SEM_INTEGRACAO);
+        repository.save(pagamento.get());
+	}
 }
